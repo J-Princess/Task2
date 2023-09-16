@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9363cc71.css",
+    "main.js": "/static/js/main.a42276bf.js",
+    "static/js/787.2635b9f9.chunk.js": "/static/js/787.2635b9f9.chunk.js",
+    "static/media/Poster.png": "/static/media/Poster.089b7558ccd8b257ecc1.png",
+    "static/media/poster-3ed3920a.svg": "/static/media/poster-3ed3920a.e8835157aa88075fc4d9f7797cdaac88.svg",
+    "static/media/Group 52.png": "/static/media/Group 52.e9c693b5a3d9ec04a5ac.png",
+    "static/media/image (2).webp": "/static/media/image (2).ad2d1deaa8b53528c020.webp",
+    "static/media/image.webp": "/static/media/image.a359e758d4f4fabc9384.webp",
+    "static/media/image (1).webp": "/static/media/image (1).2be2078e06059a98e6b4.webp",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Favorite.svg": "/static/media/Favorite.78a4ed02fcd72fb886f1c53269776885.svg",
+    "index.html": "/index.html",
+    "static/media/Play.svg": "/static/media/Play.9417147bc6d0510a775f9e5eccfb8099.svg",
+    "static/media/Chevron right.svg": "/static/media/Chevron right.5b8f3ede2046c9b49516828baf09a822.svg",
+    "main.9363cc71.css.map": "/static/css/main.9363cc71.css.map",
+    "main.a42276bf.js.map": "/static/js/main.a42276bf.js.map",
+    "787.2635b9f9.chunk.js.map": "/static/js/787.2635b9f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9363cc71.css",
+    "static/js/main.a42276bf.js"
+  ]
+}
