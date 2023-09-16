@@ -11,11 +11,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<MovieList />} />
-        {/* <Route path="/movie/:id">
-  <Mainbar />
-</Route> */}
+        
         <Route path="/movie/:id" element={<Mainbar />} />
-        {/* Add more routes as needed */}
+       
       </Routes>
     </div>
   );
