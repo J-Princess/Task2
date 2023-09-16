@@ -32,13 +32,14 @@ const MovieList = () => {
   const movie = movies.length > 0 ? movies[0] : null;
 
   return (
-    <div className="container-fluid">
+    <div className="">
       <section
-        className="container-fluid sector"
+        className="container-fluid sector w-100"
         style={{
           backgroundImage: movie
             ? `url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`
-            : "`${PosterImg}`",
+            : "{PosterImg}",
+        
         }}
       >
         <Navbar />
@@ -47,7 +48,7 @@ const MovieList = () => {
           <div
             className="ward text-start"
           >
-            <div className="cardbody text-light-emphasis">
+            <div className="card-sm-body text-light-emphasis">
               <h1 className="card-title text-light">{movie.original_title}</h1>
               <div className="d-flex text-light my-4">
                 <img
@@ -89,16 +90,16 @@ const MovieList = () => {
           </div>
         )}
       </section>
-      <div className="movie-list">
-        <div className="container-fluid d-flex my-4">
-          <h4 className="mx-3 text-start w-100 fw-bold">Featured Movie</h4>
+      <div className="movie-list container-fluid ">
+        <div className="d-flex my-4 w-100">
+          <h4 className="mx-3 text-start w-75 fw-bold">Featured Movie</h4>
           <a href="#" className="d-flex pend">
-            <p className="mx-2">See more</p>
+            <p className="mx-5 ">See more</p>
             <img src={SeeImg} alt="See More" style={{ width: "20px", height: "23px" }}
             />{" "}
           </a>
         </div>
-        <div className="row mx-5 p-2">
+        <div className="row mx-3 p-2 ">
           {movies.map((movie) => (
             <MovieUnit key={movie.id} movie={movie} />
           ))}

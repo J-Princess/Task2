@@ -6,7 +6,9 @@ import LoveImg from "./images/Favorite.svg";
 
 const MovieUnit = ({ movie }) => {
   return (
-    <div className="card p-2 text-start m-3" style={{ width: "18rem",  }} data-testid="movie-card">
+    <>
+
+    <div className="card p-1 text-start m-2 col-sm-4" style={{ width: "18.3rem"  }} data-testid="movie-card">
       <Link to={`/movie/${movie.id}`}>
         <img
           src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
@@ -19,7 +21,6 @@ const MovieUnit = ({ movie }) => {
           className="fav"
           alt="Favourite"
           data-testid="movie-poster"
-          style={{ width: "6rem",  }}
         />
       </Link>
       <div className="card-body">
@@ -48,6 +49,8 @@ const MovieUnit = ({ movie }) => {
         <p className="text-dark">{movie.tagline}</p>
       </div>
     </div>
+  
+    </>
   );
 };
 
