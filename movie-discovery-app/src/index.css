@@ -1,28 +1,40 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
   margin: 0 auto;
-  font-family: Poppins;
+  font-family: "Poppins" ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 /* .bgImg{
   background-image: url(./movie-app/src/components/images/poster-3ed3920a.svg);
 } */
+.sector{
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  color: white;
+}
 .form-control::placeholder {
   color: #ffffff;
 }
-.wow{
+.ward{
+  width: 23rem;
+  margin: 50px 100px 0px;
+  background: transparent;
+}
+.wow {
   z-index: 0;
   position: relative;
 }
-.fav{
+
+.fav {
   z-index: 2;
   left: 180px;
   width: 40px;
@@ -30,16 +42,17 @@ code {
   position: absolute;
   margin-top: 10px;
 }
+
 .round {
   border-radius: 0px 45px 45px 0px;
-  border: 1px solid rgba(0, 0, 0, 0.30);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .divtain {
   width: 180px;
   border-radius: 20px;
-  border: 1px solid rgba(190, 18, 60, 0.70);
-  background: rgba(248, 231, 235, 0.40);
+  border: 1px solid rgba(190, 18, 60, 0.7);
+  background: rgba(248, 231, 235, 0.4);
 }
 
 .divtain button {
@@ -47,7 +60,7 @@ code {
 
   border: none;
   border-radius: 30px;
-  background: rgba(190, 18, 60, 0.20);
+  background: rgba(190, 18, 60, 0.2);
   padding: 10px 15px;
 }
 
@@ -57,7 +70,7 @@ code {
   background-size: cover;
   border-radius: 20px;
   padding: 180px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
@@ -73,7 +86,7 @@ code {
 
 .pend {
   text-decoration: none;
-  color: var(--rose-700, #BE123C);
+  color: var(--rose-700, #be123c);
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
@@ -82,13 +95,12 @@ code {
   width: 100%;
   height: 38px;
   justify-content: flex-end;
-
 }
 
 .cols {
   border-radius: 10px;
-  border: 1px solid #BE123C;
-  background: rgba(190, 18, 60, 0.10);
+  border: 1px solid #be123c;
+  background: rgba(190, 18, 60, 0.1);
   padding: 12px 40px;
   width: 100%;
   height: 55px;
@@ -99,7 +111,7 @@ code {
   padding: 12px 50px;
   width: 100%;
   height: 55px;
-  background: #BE123C;
+  background: #be123c;
 }
 
 .col3 {
@@ -107,15 +119,14 @@ code {
   padding: 0px 0px;
   width: 35%;
   height: inherit;
-  background: #BE123C;
+  background: #be123c;
 }
 
 .last {
   border-radius: 10px;
-  border: 1px solid #C7C7C7;
-  background: rgba(255, 255, 255, 0.80);
+  border: 1px solid #c7c7c7;
+  background: rgba(255, 255, 255, 0.8);
   height: 55px;
-
 }
 
 .final {
@@ -124,4 +135,34 @@ code {
   height: 239px;
   border-radius: 10px;
   /* background-color: aqua; */
+}
+
+.para {
+  color: var(--gray-900, #111827);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.airbend {
+  color: var(--gray-500, #6b7280);
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 788px){
+  .sector{
+    height: 500px;
+    width: 500px;
+    margin-left: 0px;
+  }
+  .ward{
+    /* width: 23rem; */
+    margin: 50px 10px 0px;
+    background: transparent;
+  }
 }

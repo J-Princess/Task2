@@ -81,7 +81,7 @@ const Mainbar = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-3 round ">
+          <div className="col-sm-3 round ">
             <div className="my-5 mx-4">
               <Link to="/" className="navbar-brand d-flex">
                 <img
@@ -150,7 +150,7 @@ const Mainbar = () => {
             </div>
           </div>
 
-          <div className="col m-5">
+          <div className="col-sm m-5">
             <div
               className="wHero"
               style={{
@@ -166,7 +166,7 @@ const Mainbar = () => {
               <p>Watch Trailer</p>
             </div>
             <div className="row mt-4">
-              <div className="col-8">
+              <div className="col-sm-8">
                 <div className=" d-flex text-start">
                   <h3 data-testid="movie-title">{movie.title}</h3>
                   <li className="mx-3 mt-1" data-testid="movie-release-date">
@@ -184,7 +184,7 @@ const Mainbar = () => {
                   <p data-testid="movie-overview">{movie.overview}</p>
                 </div>
               </div>
-              <div className="col mx-4">
+              <div className="col-sm mx-4">
                 <div className="d-flex tend">
                   <img
                     src={StarImg}
@@ -213,7 +213,7 @@ const Mainbar = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-8">
+              <div className="col-sm-8">
                 {" "}
                 <div className="text-start my-3">
                   <p>
@@ -252,7 +252,7 @@ const Mainbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="col mx-4">
+              <div className="col-sm mx-4">
                 {" "}
                 <img src={RectImg} alt="Logo" className="final" />
               </div>

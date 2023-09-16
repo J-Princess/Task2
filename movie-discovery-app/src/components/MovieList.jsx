@@ -9,6 +9,7 @@ import IMDPImg from "./images/imbp.png";
 import TomatoImg from "./images/image (1).webp";
 import Mainbar from "./MainBar";
 import SeeImg from "./images/Chevron right.svg";
+import Footer from "./Footer";
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
@@ -31,30 +32,22 @@ const MovieList = () => {
   const movie = movies.length > 0 ? movies[0] : null;
 
   return (
-    <div className="">
+    <div className="container-fluid">
       <section
-        className="container-fluid"
+        className="container-fluid sector"
         style={{
           backgroundImage: movie
             ? `url(https://image.tmdb.org/t/p/w500${movie.backdrop_path})`
-            : "{PosterImg}",
-          backgroundSize: "cover",
-          height: "650px",
-          color: "white",
+            : "`${PosterImg}`",
         }}
       >
         <Navbar />
 
         {movie && (
           <div
-            className="card text-start"
-            style={{
-              width: "23rem",
-              margin: "50px 100px 0px",
-              background: "transparent",
-            }}
+            className="ward text-start"
           >
-            <div className="card-body text-light-emphasis">
+            <div className="cardbody text-light-emphasis">
               <h1 className="card-title text-light">{movie.original_title}</h1>
               <div className="d-flex text-light my-4">
                 <img
@@ -111,6 +104,7 @@ const MovieList = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -24,7 +24,7 @@ const MovieUnit = ({ movie }) => {
       </Link>
       <div className="card-body">
       <p className="card-text" data-testid="movie-release-date">
-          {movie.origin_country} {movie.release_date}
+          {movie.origin_country} {new Date(movie.release_date).toUTCString()}
         </p>
         <h2 className="card-title" data-testid="movie-title">
           {movie.title}
